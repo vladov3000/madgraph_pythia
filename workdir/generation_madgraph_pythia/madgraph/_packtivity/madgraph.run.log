@@ -1,0 +1,17 @@
+2020-02-05 11:10:05,285 |    pack.madgraph.run |   INFO | starting file logging for topic: run
+2020-02-05 11:10:05,939 |    pack.madgraph.run |   INFO | b'mesg: ttyname failed: Inappropriate ioctl for device'
+2020-02-05 11:10:05,958 |    pack.madgraph.run |   INFO | b'cwd=/code'
+2020-02-05 11:10:05,958 |    pack.madgraph.run |   INFO | b'ufotar=None'
+2020-02-05 11:10:05,959 |    pack.madgraph.run |   INFO | b'proc_card=proc_card_mg5.dat'
+2020-02-05 11:10:05,959 |    pack.madgraph.run |   INFO | b'param_card=None'
+2020-02-05 11:10:05,959 |    pack.madgraph.run |   INFO | b'run_card=None'
+2020-02-05 11:10:05,959 |    pack.madgraph.run |   INFO | b'Traceback (most recent call last):'
+2020-02-05 11:10:05,959 |    pack.madgraph.run |   INFO | b'File "steer_madgraph.py", line 75, in <module>'
+2020-02-05 11:10:05,960 |    pack.madgraph.run |   INFO | b'main()'
+2020-02-05 11:10:05,960 |    pack.madgraph.run |   INFO | b'File "steer_madgraph.py", line 71, in main'
+2020-02-05 11:10:05,960 |    pack.madgraph.run |   INFO | b'args.param_card, args.run_card, args.shower_card, args.shower, args.n_events)'
+2020-02-05 11:10:05,960 |    pack.madgraph.run |   INFO | b'File "steer_madgraph.py", line 45, in run_madgraph'
+2020-02-05 11:10:05,961 |    pack.madgraph.run |   INFO | b'shutil.copyfile(proc_card_path, proc_card_copy_path)'
+2020-02-05 11:10:05,961 |    pack.madgraph.run |   INFO | b'File "/usr/lib/python2.7/shutil.py", line 96, in copyfile'
+2020-02-05 11:10:05,961 |    pack.madgraph.run |   INFO | b"with open(src, 'rb') as fsrc:"
+2020-02-05 11:10:05,961 |    pack.madgraph.run |   INFO | b"IOError: [Errno 2] No such file or directory: 'proc_card_mg5.dat'"
