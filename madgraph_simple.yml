@@ -5,6 +5,7 @@ stages:
     scheduler:
       parameters:
         proc_card: {output: proc_card, step: init}
+        n_events: {output: n_events, step: init}
         outputlhe: "{workdir}/events.lhe"
       scheduler_type: singlestep-stage
       step:
@@ -14,7 +15,7 @@ stages:
           imagetag: '2.6.7'
         process:
           process_type: string-interpolated-cmd
-          cmd: 'python steer_madgraph.py {proc_card} {outputlhe}'
+          cmd: python steer_madgraph.py {proc_card} {outputlhe} -n {n_events}
         publisher:
           outputmap:
             lhefile: outputlhe

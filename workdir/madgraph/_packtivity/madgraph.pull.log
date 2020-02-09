@@ -1,0 +1,5 @@
+2020-02-08 22:29:52,754 |   pack.madgraph.pull |   INFO | starting file logging for topic: pull
+2020-02-08 22:29:54,237 |   pack.madgraph.pull |   INFO | b'2.6.7: Pulling from recast/madgraph'
+2020-02-08 22:29:54,237 |   pack.madgraph.pull |   INFO | b'Digest: sha256:3cdc892473cfe6e51d976d0c3627fa13610c1c0d892f903a32b7ee1d919d4686'
+2020-02-08 22:29:54,238 |   pack.madgraph.pull |   INFO | b'Status: Image is up to date for recast/madgraph:2.6.7'
+2020-02-08 22:29:54,238 |   pack.madgraph.pull |   INFO | b'docker.io/recast/madgraph:2.6.7'
