@@ -1,11 +1,28 @@
 # madgraph_pythia
 This repo is for testing the magraph-pythia generated workflow.  
-
-Use `./run.sh` to run yadage-workflow on workflow.yml  
+  
+Use `./run.sh` to run yadage-workflow on workflow.yml. 
+Use `./clean.sh` to create a fresh workdir and copy proc_card_mg5.dat into wokdir/init to use it as input.  
 
 workflow1.yml is a back-up version with the originally generated workflow.  
-
+  
 Current Bug:  
-`2020-02-05 11:10:06,472 |   pack.madgraph.step |  ERROR | non-zero return code raising exception`  
+```
+cwd=/code
+ufotar=None
+proc_card=/Users/vlad/Documents/EPEprojects/yadage-tests/madgraph_pythia/workdir/init/proc_card_mg5.dat
+param_card=None
+run_card=None
+Traceback (most recent call last):
+  File "steer_madgraph.py", line 75, in <module>
+    main()
+  File "steer_madgraph.py", line 71, in main
+    args.param_card, args.run_card, args.shower_card, args.shower, args.n_events)
+  File "steer_madgraph.py", line 50, in run_madgraph
+    event_path = glob.glob(os.path.join(run_dir, '*.lhe.gz'))[0]
+IndexError: list index out of range
+```
 
-`2020-02-05 11:10:06,472 |   pack.madgraph.step |  ERROR | subprocess failed. code: 1,  command docker run --rm -i  --cidfile /Users/vlad/Documents/EPEprojects/yadage-tests/madgraph_pythia/workdir/generation_madgraph_pythia/madgraph/_packtivity/madgraph.cid     -v /Users/vlad/Documents/EPEprojects/yadage-tests/madgraph_pythia/workdir/generation_madgraph_pythia/madgraph:/Users/vlad/Documents/EPEprojects/yadage-tests/madgraph_pythia/workdir/generation_madgraph_pythia/madgraph:rw -v /Users/vlad/Documents/EPEprojects/yadage-tests/madgraph_pythia/workdir/init:/Users/vlad/Documents/EPEprojects/yadage-tests/madgraph_pythia/workdir/init:rw recast/madgraph:2.6.7 sh -c sh`
+## List of Changes Made to Generated Workflow
+- removed unecessary parameters(param_card, run_card) from madgraph workflow
+- manually copy input proc card into workflow/init
