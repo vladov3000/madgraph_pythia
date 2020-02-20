@@ -1,2 +1,2 @@
 rm -r workdir
-yadage-run workdir madgraph_simple.yml input.yml -d initdir=$PWD
+yadage-run workdir workflow.yml input.yml -d initdir=$PWD

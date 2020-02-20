@@ -34,11 +34,11 @@ stages:
       step:
         environment:
           environment_type: docker-encapsulated
-          image: recast/pythia
-          imagetag: '8243'
+          image: recast/madgraph-pythia
+          imagetag: '2.6.6'
         process:
           process_type: string-interpolated-cmd
-          script: 'python steer_pythia.py {inputlhe} {hepmc} {n_events}'
+          cmd: 'python steer_pythia.py {inputlhe} {outputhepmc} {n_events}'
         publisher:
           outputmap:
             hepmc: outputhepmc
