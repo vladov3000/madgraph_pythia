@@ -1,5 +1,5 @@
 # madgraph_pythia
-This repo is for testing the magraph-pythia generated workflow.  
+This repo is for testing the magraph-pythia workflow generated from [recast-workflow](https://github.com/recast-hep/recast-workflow/tree/dev).  
   
 Use `./run.sh` to run yadage-workflow on workflows/workflow.yml, which contains the working madgraph-pythia stage.   
 The inputs folder contains all files that can be used as parameters, and inputs/input.yml maps the inputs to their values.
