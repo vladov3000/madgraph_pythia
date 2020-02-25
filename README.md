@@ -7,6 +7,11 @@ The workflows folder contains three yadage workflows:
 - genflow.yml is a back-up version with the originally generated workflow.  
 - madgraph_simple.yml is a workflow only using madgraph that takes a proc_card.dat and outputs an events.lhe file
 - workflow.yml is a workflow that runs madgraph and pythia in succession and takes a proc_card.dat and outputs a .hepmc file
+
+## To Just Run Madgraph
+1. Change workflows/workflow.yml to workflows/simple_madgraph.yml
+2. Execute ```./run.sh```
+3. Output .lhe file will be in workdir/madgraph
  
 ## List of Changes Made to Generated Workflow
 - removed unecessary parameters(param_card, run_card) from madgraph workflow
